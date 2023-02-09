@@ -2,19 +2,22 @@ import './Savepdf.css' ;
 import { Model } from 'survey-core';
 import { Survey } from 'survey-react-ui';
 import { SurveyPDF } from "survey-pdf";
+import { dmoquestType } from '../../Bddtempo/dmoQuest';
 
-const surveyJson = { /* ... */ };
+//const surveyJson = { /* ... */ };
 
-const exportToPdfOptions = { /* ... */ };
+const exportToPdfOptions = {
+    fontSize: 12
+  };
 
 const savePdf = function (surveyData) {
-  const surveyPdf = new SurveyPDF(surveyJson, exportToPdfOptions);
+  const surveyPdf = new SurveyPDF(dmoquestType, exportToPdfOptions);
   surveyPdf.data = surveyData;
   surveyPdf.save();
 };
 // ...
 function Surveytopdf() {
-  const survey = new Model(surveyJson);
+  const survey = new Model(dmoquestType);
   
   survey.addNavigationItem({
     id: "pdf-export",
@@ -29,3 +32,4 @@ function Surveytopdf() {
 //https://surveyjs.io/pdf-generator/documentation/get-started-angular
 
 export default Surveytopdf;
+

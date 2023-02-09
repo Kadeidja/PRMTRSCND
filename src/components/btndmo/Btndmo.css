@@ -1,0 +1,16 @@
+.dmoclass{
+    display: inline-flex;
+}
+.btndmoclass{
+    padding: 10px;
+    margin: 10px;
+    border: solid white;
+    border-radius: 10px;
+    background-color: blue;
+    color: whitesmoke;
+}
+.btndmoclass:hover{
+    background-color: whitesmoke;
+    color: blue;
+    border: solid blue;
+}

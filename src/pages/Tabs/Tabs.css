@@ -1,0 +1,18 @@
+.btnTabs{
+    display: inline;
+}
+.active-btnTabs{
+    padding: 30px;
+    margin: 30px;
+    box-shadow: 5px -5px -5px #000;
+    background-color: #f3f3f3 ;
+    border-radius: 10px;
+}
+
+.windowsTbs{
+    display: none;
+}
+.active-windowsTbs{
+    display: block;
+    background-color: #DCE2FA ;
+}

@@ -1,0 +1,20 @@
+.bdcclass{
+    display: inline-flex;
+}
+.btnbdcclass{
+    padding: 10px;
+    margin: 10px;
+    border: solid white;
+    border-radius: 10px;
+    background-color: blue;
+    color: whitesmoke;
+}
+.btnbdcclass:hover{
+    background-color: whitesmoke;
+    color: blue;
+    border: solid blue;
+}
+.btnbdcclass:focus{
+    background-color: whitesmoke;
+    color: blue;
+}

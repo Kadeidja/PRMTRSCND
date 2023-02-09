@@ -43,7 +43,7 @@ export const dmoquestType = {
         {
             "type": "imagepicker",
             "name": "Materiel",
-            "title": "Materiel a prévoir  ",
+            "title": "Materiel a prévoir ",
             "description": "Séléctionner les éléments nécessaires",
             "isRequired": true,
             "choices": [
@@ -77,6 +77,104 @@ export const dmoquestType = {
                 }
 
             ]
+        },
+        {
+            "type": "imagepicker",
+            "name": "Accès",
+            "title": "Accès ",
+            "description": "Séléctionner l'accès",
+            "isRequired": true,
+            "choices": [
+                {
+                    "value": "Rien",
+                    "text": "Rien"
+                },
+                {
+                    "value": "Ascenseur",
+                    "imageLink": "../img/photo23.jpg",
+                    "text": "Ascenseur"
+                },
+                {
+                    "value": "Echelle",
+                    "imageLink": "./img/photo24.jpg",
+                    "text": "Echelle"
+                },
+                {
+                    "value": "Autre",
+                    "text": "Autre"
+                }
+
+            ]
+        },
+        {
+            "type": "imagepicker",
+            "name": "Manutention",
+            "title": "Manutention ",
+            "description": "Séléctionner les matériaux de manutention",
+            "isRequired": true,
+            "choices": [
+                {
+                    "value": "Rien",
+                    "text": "Rien"
+                },
+                {
+                    "value": "Ascenseur",
+                    "imageLink": "../img/photo23.jpg",
+                    "text": "Ascenseur"
+                },
+                {
+                    "value": "Echelle",
+                    "imageLink": "./img/photo24.jpg",
+                    "text": "Echelle"
+                },
+                {
+                    "value": "Autre",
+                    "text": "Autre"
+                }
+
+            ]
+        },
+        {
+            "type": "imagepicker",
+            "name": "Type-de-Fixation",
+            "title": "Type de Fixation ",
+            "description": "Séléctionner les types de fixations",
+            "isRequired": true,
+            "choices": [
+                {
+                    "value": "Rien",
+                    "text": "Rien"
+                },
+                {
+                    "value": "Ascenseur",
+                    "imageLink": "../img/photo23.jpg",
+                    "text": "Ascenseur"
+                },
+                {
+                    "value": "Echelle",
+                    "imageLink": "./img/photo24.jpg",
+                    "text": "Echelle"
+                },
+                {
+                    "value": "Autre",
+                    "text": "Autre"
+                }
+
+            ]
+        },
+
+        {
+            "type": "comment",
+            "name": "autre-comment",
+            "title": "Autre",
+            "visibleIf": "{Type-de-Fixation}=Autre ",
+            "isRequired": "true",
+            "choicesFromQuestion": "Type-de-Fixation",
+            "choicesFromQuestionMode": "selected",
+            "showQuestionNumbers": "false"
         }
+
+
+
     ]
 }

@@ -76,6 +76,38 @@ export const questType = {
             ],
             "showLabel": true,
             "multiSelect": true
-          }
+          },
+          // QUESTION ET SOUS QUESTION -------------------------
+        {
+          "type": "imagepicker",
+          "name": "animals",
+          "title": "Which animals would you like to see in real life?",
+          "description": "Please select all that apply.",
+          "isRequired": true,
+          "choices": [
+            {
+              "value": "lion",
+              "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/lion.jpg",
+              "text": "Lion"
+            },
+            {
+              "value": "giraffe",
+              "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/giraffe.jpg",
+              "text": "Giraffe"
+            },
+            {
+              "value": "red-panda",
+              "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/panda.jpg",
+              "text": "Red panda"
+            },
+            {
+              "value": "camel",
+              "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/camel.jpg",
+              "text": "Camel"
+            }
+          ],
+          "showLabel": true,
+          "multiSelect": true
+        }
     ]
 };

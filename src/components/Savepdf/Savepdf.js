@@ -21,7 +21,7 @@ function Surveytopdf() {
   
   survey.addNavigationItem({
     id: "pdf-export",
-    title: "Save as PDF",
+    title: "Générer un PDF",
     action: () => savePdf(survey.data)
   });
 

@@ -78,36 +78,39 @@ export const questType = {
             "multiSelect": true
           },
           // QUESTION ET SOUS QUESTION -------------------------
-        {
-          "type": "imagepicker",
-          "name": "animals",
-          "title": "Which animals would you like to see in real life?",
-          "description": "Please select all that apply.",
-          "isRequired": true,
-          "choices": [
+          {
+            "type": "panel",
+            "name": "Type-de-Fixation",
+            "title": "Type de Fixation ",
+            "description": "Séléctionner les types de fixations",
+            "isRequired": true,
+            "elements": [
             {
-              "value": "lion",
-              "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/lion.jpg",
-              "text": "Lion"
-            },
-            {
-              "value": "giraffe",
-              "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/giraffe.jpg",
-              "text": "Giraffe"
-            },
-            {
-              "value": "red-panda",
-              "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/panda.jpg",
-              "text": "Red panda"
-            },
-            {
-              "value": "camel",
-              "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/camel.jpg",
-              "text": "Camel"
+                "type": "panel",
+                "name": "type-de-fixation",
+                "title": "Type de Fixation",
+                "elements": [{
+                    "type": "radiogroup",
+                    "name": "les-fixations",
+                    "title": "Les Fixations",
+                    "isRequired": true,
+                    "choices":["PATTES EQUERRE","VIS"]
+                }, {
+                    "type": "dropdown",
+                    "name": "dropdown-pattes-les-fixations",
+                    "title": "Selectionner un type de patte",
+                    "visibleIf":"{les-fixations}='PATTES EQUERRE'",
+                    "choices": [ "Vissage Vis Peinture 6*60" , "Scellement Mortier", "Scellement Plâtre" ]
+                  
+                }, {
+                    "type": "dropdown",
+                    "name": "dropdown-vis-les-fixations",
+                    "title": "Selectionner un type de vis",
+                    "visibleIf":"{les-fixations}=VIS",
+                    "choices": [ "VIS1" , "VIS2", "VIS3" ]
+                  }]
             }
-          ],
-          "showLabel": true,
-          "multiSelect": true
+            ]
         }
     ]
 };
